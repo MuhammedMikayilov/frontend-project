@@ -36,18 +36,32 @@
     #intro .btn-intro a {
       border-radius: 30px; }
 
+body {
+  height: 2000px; }
+
 .navbar {
   background-color: transparent;
   padding: 7px 0;
   height: 50px; }
   .navbar .nav-menu {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 17px 0 6px 45px; }
+    padding: 17px 0 6px 45px;
+    transition: all 0.5s; }
   .navbar .nav-list {
-    padding: 0 15px; }
-  .navbar a {
+    padding: 0 15px;
+    font-size: 10px;
+    padding-left: 45px; }
+  .navbar .nav-item a {
     text-decoration: none;
-    color: white; }
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    transition: all 0.2s; }
+    .navbar .nav-item a:hover {
+      color: grey !important;
+      transition: all 0.2s; }
   .navbar .logo {
     color: white;
     font-weight: 500;
@@ -56,7 +70,23 @@
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     padding: 7px 20px;
     height: 50px; }
-    .navbar .icon-navbar a i {
-      margin: 10px 10px; }
+    .navbar .icon-navbar a {
+      color: white;
+      transition: all 0.2s; }
+      .navbar .icon-navbar a:hover {
+        color: grey !important;
+        text-decoration: none;
+        transition: all 0.2s; }
+      .navbar .icon-navbar a i {
+        margin: 10px 10px; }
+
+.bg-color-white {
+  background-color: white;
+  padding: 7px 0;
+  transition: all 0.5s; }
+  .bg-color-white a {
+    color: black !important; }
+  .bg-color-white .logo {
+    color: black; }
 
 /*# sourceMappingURL=style.css.map */
