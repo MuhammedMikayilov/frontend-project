@@ -1,0 +1,62 @@
+#intro .btn-intro a {
+  padding: 15px 40px;
+  border-radius: 30px; }
+
+#intro {
+  background: url("../imgs/bg-intro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  opacity: 1; }
+  #intro::before {
+    position: absolute;
+    content: "";
+    background: #1f1f1f;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.4; }
+  #intro .cent {
+    position: relative;
+    top: 40%; }
+  #intro .logo img {
+    height: 8rem; }
+  #intro .text-side {
+    position: relative;
+    top: 45px; }
+    #intro .text-side p {
+      font-size: 1.4375em;
+      color: white; }
+  #intro .btn-intro {
+    margin-top: 15px; }
+    #intro .btn-intro a {
+      border-radius: 30px; }
+
+.navbar {
+  background-color: transparent;
+  padding: 7px 0;
+  height: 50px; }
+  .navbar .nav-menu {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 17px 0 6px 45px; }
+  .navbar .nav-list {
+    padding: 0 15px; }
+  .navbar a {
+    text-decoration: none;
+    color: white; }
+  .navbar .logo {
+    color: white;
+    font-weight: 500;
+    font-size: 25px; }
+  .navbar .icon-navbar {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 7px 20px;
+    height: 50px; }
+    .navbar .icon-navbar a i {
+      margin: 10px 10px; }
+
+/*# sourceMappingURL=style.css.map */

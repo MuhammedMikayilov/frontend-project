@@ -1,0 +1,38 @@
+.navbar {
+  background-color: transparent;
+  padding: 7px 0;
+  height: 50px;
+  //   background: none;
+  //   padding: 0 1rem;
+
+  .nav-menu {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 17px 0 6px 45px;
+  }
+
+  .nav-list {
+    padding: 0 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+
+  .logo {
+    color: $secondary-color;
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+  .icon-navbar {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 7px 20px;
+    height: 50px;
+    a {
+      i {
+        margin: 10px 10px;
+      }
+    }
+  }
+}
