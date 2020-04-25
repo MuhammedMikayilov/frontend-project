@@ -300,7 +300,9 @@
       font-size: 1.4375em; }
 
 #products {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  padding: 0;
+  margin: 0; }
   #products .product-list {
     list-style-type: none; }
     #products .product-list .product-list-item {
@@ -358,5 +360,91 @@
     #products .items-product:hover .overlay-items {
       transition: all 0.8s;
       opacity: 1; }
+
+#creative {
+  background-color: #f8f8f8;
+  padding: 100px 0;
+  margin-top: -16px; }
+  #creative .title {
+    text-align: center; }
+    #creative .title h4 {
+      color: #343434;
+      font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+      font-weight: 600; }
+    #creative .title p {
+      color: #767676;
+      font-family: "Lora", "Helvetica", "Arial", sans-serif;
+      font-size: 1.4375em; }
+  #creative .item-creative {
+    position: relative;
+    margin-top: 100px; }
+    #creative .item-creative .overlay-items {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: white;
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all 0.8s; }
+      #creative .item-creative .overlay-items .over-text {
+        text-align: center;
+        transform: translateX(15px);
+        transition: all 0.4s; }
+        #creative .item-creative .overlay-items .over-text p {
+          font-size: 14px;
+          margin: 0;
+          font-family: "Lora", "Helvetica", "Arial", sans-serif;
+          color: #767676; }
+        #creative .item-creative .overlay-items .over-text h4 {
+          font-size: 16px;
+          margin: 0;
+          font-family: "Lora", "Helvetica", "Arial", sans-serif;
+          font-weight: bold; }
+    #creative .item-creative:hover .over-text {
+      transform: translateX(0);
+      transition: all 0.4s; }
+    #creative .item-creative:hover .overlay-items {
+      transition: all 0.8s;
+      opacity: 1; }
+
+#parallax {
+  padding: 100px 0;
+  background-image: url("../imgs/hero2.jpg");
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 0; }
+  #parallax .item-parallax {
+    text-align: center;
+    color: white;
+    font-family: "Lora", "Helvetica", "Arial", sans-serif; }
+    #parallax .item-parallax .icon {
+      font-size: 70px; }
+    #parallax .item-parallax h5 {
+      font-size: 25px;
+      font-weight: 600; }
+    #parallax .item-parallax span {
+      font-style: italic;
+      font-size: 18px; }
+  #parallax::before {
+    position: absolute;
+    content: "";
+    background: #232323a4;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; }
 
 /*# sourceMappingURL=style.css.map */

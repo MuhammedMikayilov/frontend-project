@@ -1,6 +1,7 @@
 #products {
   background-color: $background-color;
-
+  padding: 0;
+  margin: 0;
   .product-list {
     list-style-type: none;
     .product-list-item {
@@ -48,8 +49,6 @@
       top: 0px;
       left: 0;
       color: $secondary-color;
-      //   visibility: hidden;
-      //   display: none;
       opacity: 0;
       transition: all 0.8s;
       cursor: pointer;
@@ -86,9 +85,6 @@
     &:hover .overlay-items {
       transition: all 0.8s;
       opacity: 1;
-
-      //   visibility: visible;
-      //   display: block;
     }
   }
 }

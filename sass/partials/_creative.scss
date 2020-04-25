@@ -1,0 +1,61 @@
+#creative {
+  background-color: $background-color;
+  padding: 100px 0;
+  margin-top: -16px;
+
+  .title {
+    @include title($main-color, $title-head-color);
+    text-align: center;
+  }
+
+  .item-creative {
+    position: relative;
+    margin-top: 100px;
+    .overlay-items {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $secondary-color;
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all 0.8s;
+
+      .over-text {
+        text-align: center;
+        transform: translateX(15px);
+        transition: all 0.4s;
+        p {
+          font-size: 14px;
+          margin: 0;
+          font-family: "Lora", "Helvetica", "Arial", sans-serif;
+          color: $main-color;
+        }
+
+        h4 {
+          font-size: 16px;
+          margin: 0;
+          font-family: "Lora", "Helvetica", "Arial", sans-serif;
+          font-weight: bold;
+        }
+      }
+    }
+
+    &:hover .over-text {
+      transform: translateX(0);
+      transition: all 0.4s;
+    }
+
+    &:hover .overlay-items {
+      transition: all 0.8s;
+      opacity: 1;
+    }
+  }
+}

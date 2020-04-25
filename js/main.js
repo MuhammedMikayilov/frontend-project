@@ -56,7 +56,8 @@ $(document).ready(function () {
 
   //   Sidebar
 
-  $("nav .icon-navbar .sidebarBtn").click(function () {
+  $("nav .icon-navbar .sidebarBtn").click(function (e) {
+    e.preventDefault();
     $(".sidebar").addClass("open-side");
   });
 
@@ -79,7 +80,8 @@ $(document).ready(function () {
     $(".items-product").parents(".allItem").css("display", "block");
   });
 
-  $(".brand").click(function () {
+  $(".brand").click(function (e) {
+    e.preventDefault();
     $(".items-product").parent().css("display", "none");
     $(".items-product").parents(".brandItem").css("display", "block");
   });
