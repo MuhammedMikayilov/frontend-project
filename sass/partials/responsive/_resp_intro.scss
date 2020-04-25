@@ -14,7 +14,7 @@
     padding: 4em 0;
 
     .logo {
-      padding-top: 35px;
+      padding-top: 0;
       img {
         max-height: 4.875em;
         margin-bottom: 1.625em;
@@ -26,13 +26,26 @@
         // font-size: 1em;
         margin: 0px;
         text-align: center;
+        font-size: 1.1em;
+        text-align: center;
       }
     }
 
     .btn-intro {
       a {
-        margin-top: 30px !important;
+        // margin-top: 30px !important;
+        margin-top: 15px;
+        margin-bottom: 30px;
       }
     }
+
+    .icons {
+      top: 94%;
+      left: 25%;
+    }
+  }
+
+  .col-sm-12 {
+    justify-content: center;
   }
 }

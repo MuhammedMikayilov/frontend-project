@@ -66,9 +66,9 @@
           list-style-type: none;
           position: absolute;
           bottom: 4%;
-          left: 9%;
+          left: 5%;
           li {
-            font-size: 18px;
+            font-size: 16px;
             letter-spacing: 1.7em;
             display: inline-block;
             margin-right: 10px;
@@ -86,4 +86,27 @@
   }
 
   // @include icons;
+}
+
+@media only screen and (max-width: 767px) {
+  #creative {
+    .overlay-items {
+      // @include icons;
+      .icons {
+        left: 2% !important;
+        ul {
+          list-style-type: none;
+          position: absolute;
+          bottom: 4%;
+          left: 4%;
+          margin-left: -6px;
+          li {
+            font-size: 20px !important;
+            letter-spacing: 20px !important;
+            margin-right: 0 !important;
+          }
+        }
+      }
+    }
+  }
 }

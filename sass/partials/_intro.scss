@@ -1,7 +1,7 @@
 #intro {
   background: url("../imgs/bg-intro.jpg");
   width: 100%;
-  // position: relative;
+  position: relative;
   height: 100vh;
   background-size: cover !important;
   background-position: 50% 50% !important;
@@ -64,3 +64,56 @@
     @include icons;
   }
 }
+
+// RESPONSIVE
+
+// @media only screen and (max-width: 991px) {
+//   #intro {
+//     .btn-intro {
+//       a {
+//         // margin-top: 30px;
+//         padding: 9px 15px;
+//       }
+//     }
+//   }
+// }
+// @media only screen and (max-width: 767px) {
+//   #intro {
+//     height: auto;
+//     padding: 4em 0;
+
+//     .logo {
+//       padding-top: 0;
+//       img {
+//         max-height: 4.875em;
+//         margin-bottom: 1.625em;
+//       }
+//     }
+
+//     .text-side {
+//       p {
+//         // font-size: 1em;
+//         margin: 0px;
+//         text-align: center;
+//         font-size: 1.1em;
+//         text-align: center;
+//       }
+//     }
+
+//     .btn-intro {
+//       a {
+//         // margin-top: 30px !important;
+//         margin-top: 15px;
+//         margin-bottom: 30px;
+//       }
+//     }
+//     .icons {
+//       top: 94%;
+//       left: 25%;
+//     }
+//   }
+
+//   .col-sm-12 {
+//     justify-content: center;
+//   }
+// }
