@@ -230,7 +230,6 @@
 #intro {
   background: url("../imgs/bg-intro.jpg");
   width: 100%;
-  position: relative;
   height: 100vh;
   background-size: cover !important;
   background-position: 50% 50% !important;
@@ -267,6 +266,22 @@
         border-color: #546cc3; }
       #intro .btn-intro a i {
         color: white; }
+  #intro .icons {
+    position: absolute;
+    top: 146%;
+    left: 40%;
+    color: rgba(202, 202, 202, 0.685); }
+    #intro .icons .icon-list {
+      list-style-type: none; }
+      #intro .icons .icon-list .icon-list-item {
+        font-size: 29px;
+        margin-right: 18px;
+        cursor: pointer;
+        display: inline-block;
+        transition: all 0.2s; }
+        #intro .icons .icon-list .icon-list-item:hover {
+          color: white;
+          transition: all 0.2s; }
 
 @media only screen and (max-width: 991px) {
   #intro .btn-intro a {
@@ -414,6 +429,21 @@
     #creative .item-creative:hover .overlay-items {
       transition: all 0.8s;
       opacity: 1; }
+    #creative .item-creative .overlay-items .icons ul {
+      list-style-type: none;
+      position: absolute;
+      bottom: 4%;
+      left: 9%; }
+      #creative .item-creative .overlay-items .icons ul li {
+        font-size: 18px;
+        letter-spacing: 1.7em;
+        display: inline-block;
+        margin-right: 10px;
+        color: #969494;
+        transition: all 0.5s; }
+        #creative .item-creative .overlay-items .icons ul li:hover {
+          color: white;
+          transition: all 0.5s; }
 
 #parallax {
   padding: 100px 0;

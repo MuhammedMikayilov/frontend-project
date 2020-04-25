@@ -27,7 +27,6 @@
       align-items: center;
       opacity: 0;
       transition: all 0.8s;
-
       .over-text {
         text-align: center;
         transform: translateX(15px);
@@ -57,5 +56,34 @@
       transition: all 0.8s;
       opacity: 1;
     }
+
+    // @include icons;
+
+    .overlay-items {
+      // @include icons;
+      .icons {
+        ul {
+          list-style-type: none;
+          position: absolute;
+          bottom: 4%;
+          left: 9%;
+          li {
+            font-size: 18px;
+            letter-spacing: 1.7em;
+            display: inline-block;
+            margin-right: 10px;
+            color: $primary-color;
+            transition: all 0.5s;
+
+            &:hover {
+              color: $secondary-color;
+              transition: all 0.5s;
+            }
+          }
+        }
+      }
+    }
   }
+
+  // @include icons;
 }

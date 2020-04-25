@@ -14,7 +14,29 @@
     color: $p-color;
     font-family: "Lora", "Helvetica", "Arial", sans-serif;
     font-size: 1.4375em;
-    
+
     // text-align: center;
+  }
+}
+
+@mixin icons {
+  position: absolute;
+  top: 146%;
+  left: 40%;
+  color: rgba(202, 202, 202, 0.685);
+  .icon-list {
+    list-style-type: none;
+    .icon-list-item {
+      font-size: 29px;
+      margin-right: 18px;
+      cursor: pointer;
+      display: inline-block;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $secondary-color;
+        transition: all 0.2s;
+      }
+    }
   }
 }

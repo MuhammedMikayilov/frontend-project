@@ -1,7 +1,7 @@
 #intro {
   background: url("../imgs/bg-intro.jpg");
   width: 100%;
-  position: relative;
+  // position: relative;
   height: 100vh;
   background-size: cover !important;
   background-position: 50% 50% !important;
@@ -58,5 +58,9 @@
         color: white;
       }
     }
+  }
+
+  .icons {
+    @include icons;
   }
 }
