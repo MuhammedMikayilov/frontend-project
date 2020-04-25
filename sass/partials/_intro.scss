@@ -1,12 +1,15 @@
 #intro {
   background: url("../imgs/bg-intro.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  height: 100vh;
-  position: relative;
-  opacity: 1;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  z-index: 0;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
 
   &::before {
     position: absolute;
@@ -32,11 +35,11 @@
   }
 
   .text-side {
-    position: relative;
-    top: 45px;
     p {
+      margin: 42px 0;
       font-size: 1.4375em;
       color: $secondary-color;
+      font-family: "Lora", "Helvetica", "Arial", sans-serif;
     }
   }
 

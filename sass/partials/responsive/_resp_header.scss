@@ -1,0 +1,56 @@
+@media only screen and (max-width: 991px) {
+  .fixed-top {
+    position: relative;
+  }
+
+  .navbar {
+    background-color: $secondary-color !important;
+
+    // color: $primary-responsive-color;
+    .navbar-toggler {
+      display: block !important;
+      span {
+        color: $primary-responsive-color;
+      }
+    }
+
+    .icon-navbar {
+      display: none;
+    }
+
+    .nav-menu {
+      padding: 3px 5px;
+      .logo {
+        color: $primary-responsive-color !important;
+      }
+    }
+
+    .nav-item {
+      a {
+        color: $primary-responsive-color !important;
+      }
+    }
+    .icons {
+      display: block !important;
+
+      .icon-navbar {
+        display: block;
+        padding: 0;
+        height: 0;
+      }
+    }
+
+    .nav-list {
+      padding-left: 0;
+      ul {
+        li {
+          margin-top: 15px;
+
+          a {
+            color: $primary-responsive-color !important;
+          }
+        }
+      }
+    }
+  }
+}
