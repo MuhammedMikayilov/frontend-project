@@ -6,9 +6,10 @@
     .product-list-item {
       display: inline-block;
       //   color: $main-color;
-      color: $primary-color;
+      color: $main-light-color;
       font-family: "Lora", "Helvetica", "Arial", sans-serif;
       cursor: pointer;
+      font-style: italic;
       transition: all 0.5s;
 
       &:hover {
@@ -28,6 +29,8 @@
       //   font-weight: bold;
       color: $main--bold-color;
       font-style: italic;
+      font-weight: 400;
+
       cursor: default;
     }
   }

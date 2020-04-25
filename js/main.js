@@ -63,6 +63,36 @@ $(document).ready(function () {
   $(".sidebar .close-btn").click(function () {
     $(".sidebar").removeClass("open-side");
   });
-
   //   navbar end
+
+  //   ___________________________________________________________
+
+  // Product section start
+
+  $(".product-list-item").click(function () {
+    $(".selected").removeClass("selected");
+    $(this).addClass("selected");
+  });
+
+  $(".all").click(function () {
+    $(".items-product").parent().css("display", "none");
+    $(".items-product").parents(".allItem").css("display", "block");
+  });
+
+  $(".brand").click(function () {
+    $(".items-product").parent().css("display", "none");
+    $(".items-product").parents(".brandItem").css("display", "block");
+  });
+
+  $(".digital").click(function () {
+    $(".items-product").parent().css("display", "none");
+    $(".items-product").parents(".digitalItem").css("display", "block");
+  });
+
+  $(".package").click(function () {
+    $(".items-product").parent().css("display", "none");
+    $(".items-product").parents(".packageItem").css("display", "block");
+  });
+
+  //   Product section end
 });
