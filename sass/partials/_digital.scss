@@ -1,0 +1,10 @@
+#digital {
+  //   text-align: center;
+  padding: 100px 0;
+    background-color: $background-color;
+
+  .title {
+    @include title($main-color, $title-head-color);
+    text-align: center;
+  }
+}

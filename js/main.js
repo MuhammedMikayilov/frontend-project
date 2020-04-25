@@ -64,20 +64,5 @@ $(document).ready(function () {
     $(".sidebar").removeClass("open-side");
   });
 
-  //   Responsive
-  $("nav .navbar-toggler").click(function () {
-    if (!$(".nav-list").hasClass("show")) {
-      $("#intro").css({
-        "margin-top": "89%",
-      });
-      $(this).removeClass("show");
-    } else {
-      $("#intro").css({
-        "margin-top": "0",
-      });
-    }
-  });
-  //
-
   //   navbar end
 });

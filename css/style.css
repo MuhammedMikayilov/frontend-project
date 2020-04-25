@@ -162,7 +162,7 @@
         .sidebar .sidebar-list .sidebar-list-item .text p {
           padding: 0;
           margin: 0;
-          color: #838383; }
+          color: #969494; }
       .sidebar .sidebar-list .sidebar-list-item .icon {
         color: #9e9e9e;
         cursor: pointer; }
@@ -175,7 +175,7 @@
     font-size: 14px;
     font-weight: 600; }
   .sidebar .total span {
-    color: #838383; }
+    color: #969494; }
   .sidebar .button {
     text-align: center;
     margin: 55px; }
@@ -230,10 +230,8 @@
 #intro {
   background: url("../imgs/bg-intro.jpg");
   width: 100%;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
+  position: relative;
+  height: 100vh;
   background-size: cover !important;
   background-position: 50% 50% !important;
   z-index: 0;
@@ -287,5 +285,76 @@
       text-align: center; }
     #intro .btn-intro a {
       margin-top: 30px !important; } }
+#digital {
+  padding: 100px 0;
+  background-color: #f8f8f8; }
+  #digital .title {
+    text-align: center; }
+    #digital .title h4 {
+      color: #343434;
+      font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+      font-weight: 600; }
+    #digital .title p {
+      color: #767676;
+      font-family: "Lora", "Helvetica", "Arial", sans-serif;
+      font-size: 1.4375em; }
+
+#products {
+  background-color: #f8f8f8; }
+  #products .product-list {
+    list-style-type: none; }
+    #products .product-list .product-list-item {
+      display: inline-block;
+      color: #969494;
+      font-family: "Lora", "Helvetica", "Arial", sans-serif;
+      cursor: pointer;
+      transition: all 0.5s; }
+      #products .product-list .product-list-item:hover {
+        color: #3f3939;
+        transition: all 0.5s; }
+    #products .product-list em {
+      padding: 0 10px;
+      color: #b4b4b4; }
+    #products .product-list .selected {
+      color: #3f3939;
+      font-style: italic;
+      cursor: default; }
+  #products .items-product {
+    position: relative;
+    transition: all 0.5s; }
+    #products .items-product .overlay-items {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      color: white;
+      opacity: 0;
+      transition: all 0.8s;
+      cursor: pointer; }
+      #products .items-product .overlay-items .over-text {
+        position: absolute;
+        top: 24%;
+        right: 7%;
+        transform: translateY(0);
+        transition: all 0.5s; }
+        #products .items-product .overlay-items .over-text h4 {
+          font-size: 16px;
+          margin: 0;
+          font-family: "Lora", "Helvetica", "Arial", sans-serif;
+          font-weight: bold; }
+        #products .items-product .overlay-items .over-text p {
+          font-size: 14px;
+          margin: 0;
+          font-family: "Lora", "Helvetica", "Arial", sans-serif;
+          color: white; }
+    #products .items-product:hover .over-text {
+      transform: translateY(-25px);
+      transition: all 0.5s; }
+    #products .items-product:hover .overlay-items {
+      transition: all 0.8s;
+      opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
