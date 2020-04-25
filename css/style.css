@@ -198,7 +198,8 @@
     position: relative; }
 
   .navbar {
-    background-color: white !important; }
+    background-color: white !important;
+    position: relative; }
     .navbar .navbar-toggler {
       display: block !important; }
       .navbar .navbar-toggler span {
@@ -206,7 +207,8 @@
     .navbar .icon-navbar {
       display: none; }
     .navbar .nav-menu {
-      padding: 3px 5px; }
+      padding: 3px 5px;
+      position: relative; }
       .navbar .nav-menu .logo {
         color: #232323 !important; }
     .navbar .nav-item a {
@@ -220,9 +222,11 @@
     .navbar .nav-list {
       padding-left: 0; }
       .navbar .nav-list ul li {
-        margin-top: 15px; }
+        margin-top: 2px; }
         .navbar .nav-list ul li a {
-          color: #232323 !important; } }
+          color: #232323 !important; }
+        .navbar .nav-list ul li i {
+          margin-top: 5px; } }
 #intro {
   background: url("../imgs/bg-intro.jpg");
   width: 100%;

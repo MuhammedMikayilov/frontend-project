@@ -64,16 +64,20 @@ $(document).ready(function () {
     $(".sidebar").removeClass("open-side");
   });
 
-  //   responsive
-  //   /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-  //   function myFunction() {
-  //     var x = document.getElementById("myTopnav");
-  //     if (x.className === "topnav") {
-  //       x.className += " responsive";
-  //     } else {
-  //       x.className = "topnav";
-  //     }
-  //   }
+  //   Responsive
+  $("nav .navbar-toggler").click(function () {
+    if (!$(".nav-list").hasClass("show")) {
+      $("#intro").css({
+        "margin-top": "89%",
+      });
+      $(this).removeClass("show");
+    } else {
+      $("#intro").css({
+        "margin-top": "0",
+      });
+    }
+  });
+  //
 
   //   navbar end
 });
