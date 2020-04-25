@@ -77,11 +77,11 @@
 
 // Popup
 
-.popup {
+.pop-up {
   width: 100%;
   height: 100%;
-  z-index: 99999;
-  position: absolute;
+  position: fixed;
+  z-index: 9999999;
   top: 0;
   left: 0px;
   justify-content: center;
@@ -89,31 +89,44 @@
   background-color: rgba(0, 0, 0, 0.9);
   display: none;
 
-  .search {
-    margin-top: 50%;
-    background-color: rgba(66, 66, 66, 0.849);
-    border-radius: 30px;
-    color: white;
-    overflow: hidden;
+  .research {
+    .search {
+      margin-top: 50%;
+      background-color: rgba(66, 66, 66, 0.849);
+      border-radius: 30px;
+      color: white;
+      overflow: hidden;
 
-    .icon {
-      margin: 16px;
-      i {
+      .icon {
+        margin: 16px;
+        i {
+          color: white;
+          font-size: 20px;
+        }
+      }
+      .form {
+        margin: 5px;
+        background-color: transparent;
         color: white;
-        font-size: 20px;
+        border: 0;
+        font-family: "Lora", serif;
+        font-style: italic;
       }
     }
-    .form {
-      margin: 5px;
-      background-color: transparent;
+    ::placeholder {
       color: white;
-      border: 0;
-      font-family: "Lora", serif;
-      font-style: italic;
+      opacity: 1; /* Firefox */
     }
   }
-  ::placeholder {
+  .icon-pop {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
     color: white;
-    opacity: 1; /* Firefox */
+
+    i {
+      font-size: 30px;
+    }
   }
 }
