@@ -54,17 +54,15 @@ $(document).ready(function () {
     });
   }
 
-  //   navbar end
-  var popup = document.querySelector(".pop-up");
+  //   Sidebar
 
-  popup.addEventListener("click", function (p) {
-    if (!p.target.classList.contains("pop-up")) {
-      //   popup.style.display = "none";
-      //   pop.css("display", "none");
-      console.log("yes");
-    }
-    // console.log("hello");
+  $("nav .icon-navbar .sidebarBtn").click(function () {
+    $(".sidebar").addClass("open-side");
   });
-});
 
-function closePopUp() {}
+  $(".sidebar .close-btn").click(function () {
+    $(".sidebar").removeClass("open-side");
+  });
+
+  //   navbar end
+});

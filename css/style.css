@@ -34,7 +34,12 @@
   #intro .btn-intro {
     margin-top: 15px; }
     #intro .btn-intro a {
-      border-radius: 30px; }
+      border-radius: 30px;
+      background-color: #425cbb;
+      border-color: #425cbb; }
+      #intro .btn-intro a:hover {
+        background-color: #546cc3;
+        border-color: #546cc3; }
       #intro .btn-intro a i {
         color: white; }
 
@@ -99,35 +104,130 @@
   align-content: center;
   background-color: rgba(0, 0, 0, 0.9);
   display: none; }
-  .pop-up .research .search {
+  .pop-up .search {
     margin-top: 50%;
     background-color: rgba(66, 66, 66, 0.849);
     border-radius: 30px;
     color: white;
     overflow: hidden; }
-    .pop-up .research .search .icon {
+    .pop-up .search .icon {
       margin: 16px; }
-      .pop-up .research .search .icon i {
+      .pop-up .search .icon i {
         color: white;
         font-size: 20px; }
-    .pop-up .research .search .form {
+    .pop-up .search .form {
       margin: 5px;
       background-color: transparent;
       color: white;
       border: 0;
       font-family: "Lora", serif;
       font-style: italic; }
-  .pop-up .research ::placeholder {
+  .pop-up ::placeholder {
     color: white;
     opacity: 1;
     /* Firefox */ }
-  .pop-up .icon-pop {
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    cursor: pointer;
-    color: white; }
-    .pop-up .icon-pop i {
-      font-size: 30px; }
+
+.icon-pop {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
+  color: #969494;
+  transition: all 0.5s; }
+  .icon-pop:hover {
+    color: white;
+    transition: all 0.5s; }
+  .icon-pop i {
+    font-size: 30px; }
+
+.sidebar {
+  background-color: white;
+  width: 400px;
+  height: 100%;
+  z-index: 999999;
+  padding: 35px 15px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(800px);
+  transition: all 2s; }
+  .sidebar .sidebar-title {
+    border-bottom: 1px solid #f1f1f1;
+    position: relative; }
+    .sidebar .sidebar-title h5 {
+      font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+      font-weight: 600;
+      font-size: 1em;
+      padding-bottom: 13px;
+      line-height: 1.625em; }
+    .sidebar .sidebar-title .close-btn {
+      display: inline-block;
+      position: absolute;
+      top: -10px;
+      right: 2%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      background: #727272;
+      text-align: center;
+      border-radius: 50%;
+      transition: all 0.2s;
+      cursor: pointer; }
+      .sidebar .sidebar-title .close-btn i {
+        font-size: 16px;
+        color: white; }
+      .sidebar .sidebar-title .close-btn:hover {
+        background: #363636;
+        transition: all 0.2s; }
+  .sidebar .sidebar-list {
+    list-style-type: none;
+    padding: 15px 0;
+    padding-right: 20px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #f1f1f1; }
+    .sidebar .sidebar-list .sidebar-list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0; }
+      .sidebar .sidebar-list .sidebar-list-item .img {
+        width: 78px;
+        cursor: pointer; }
+      .sidebar .sidebar-list .sidebar-list-item .text {
+        display: inline-block; }
+        .sidebar .sidebar-list .sidebar-list-item .text p {
+          padding: 0;
+          margin: 0;
+          color: #838383; }
+      .sidebar .sidebar-list .sidebar-list-item .icon {
+        color: #9e9e9e;
+        cursor: pointer; }
+        .sidebar .sidebar-list .sidebar-list-item .icon:hover {
+          color: #686666; }
+  .sidebar .total h5 {
+    display: inline-block;
+    margin-right: 16px;
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 600; }
+  .sidebar .total span {
+    color: #838383; }
+  .sidebar .button {
+    text-align: center;
+    margin: 55px; }
+    .sidebar .button a {
+      background-color: #425cbb;
+      border-color: #425cbb;
+      font-size: 13px;
+      padding: 13px;
+      text-transform: uppercase; }
+      .sidebar .button a:hover {
+        background-color: #546cc3;
+        border-color: #546cc3; }
+
+.open-side {
+  transform: translateX(0px);
+  transition: all 1.5s; }
 
 /*# sourceMappingURL=style.css.map */

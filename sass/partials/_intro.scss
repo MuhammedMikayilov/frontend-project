@@ -46,7 +46,13 @@
     a {
       @extend %btn-shared;
       border-radius: 30px;
+      background-color: $btn-color;
+      border-color: $btn-color;
 
+      &:hover {
+        background-color: $btn-hover-color;
+        border-color: $btn-hover-color;
+      }
       i {
         color: white;
       }
