@@ -35,9 +35,8 @@
     margin-top: 15px; }
     #intro .btn-intro a {
       border-radius: 30px; }
-
-body {
-  height: 2000px; }
+      #intro .btn-intro a i {
+        color: white; }
 
 .navbar {
   background-color: transparent;
@@ -88,5 +87,39 @@ body {
     color: black !important; }
   .bg-color-white .logo {
     color: black; }
+
+.popup {
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none; }
+  .popup .search {
+    margin-top: 50%;
+    background-color: rgba(66, 66, 66, 0.849);
+    border-radius: 30px;
+    color: white;
+    overflow: hidden; }
+    .popup .search .icon {
+      margin: 16px; }
+      .popup .search .icon i {
+        color: white;
+        font-size: 20px; }
+    .popup .search .form {
+      margin: 5px;
+      background-color: transparent;
+      color: white;
+      border: 0;
+      font-family: "Lora", serif;
+      font-style: italic; }
+  .popup ::placeholder {
+    color: white;
+    opacity: 1;
+    /* Firefox */ }
 
 /*# sourceMappingURL=style.css.map */

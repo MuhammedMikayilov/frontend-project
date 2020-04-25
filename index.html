@@ -17,6 +17,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
     />
@@ -63,7 +67,7 @@
             </ul>
           </div>
           <div class="icon-navbar">
-            <a href="#">
+            <a class="searchBtn" href="#">
               <i class="fas fa-search"></i>
             </a>
             <a href="#">
@@ -76,6 +80,28 @@
           <i class="icon-Align-Right icon icon--sm"></i>
         </div>
       </nav>
+
+      <!-- Popup start-->
+      <div class="popup">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <div class="search input-group flex-nowrap">
+                <div class="icon input-group-prepend">
+                  <i class="fas fa-search"></i>
+                </div>
+                <input
+                  type="text"
+                  class="form form-control"
+                  placeholder="Type your search and hit enter"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Popup end -->
+
       <!-- Navbar header end -->
     </header>
 
@@ -114,7 +140,8 @@
                   data-height="360"
                   href="https://www.youtube.com/watch?v=_ytFg0hFad8"
                 >
-                  ► Watch The Overview
+                  <i class="fas fa-play"></i>
+                  Watch The Overview
                 </a>
               </div>
             </div>

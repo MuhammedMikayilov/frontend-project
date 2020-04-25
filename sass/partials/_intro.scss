@@ -46,6 +46,10 @@
     a {
       @extend %btn-shared;
       border-radius: 30px;
+
+      i {
+        color: white;
+      }
     }
   }
 }
