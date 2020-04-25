@@ -70,30 +70,20 @@ $(document).ready(function () {
 
   // Product section start
 
+  var $projects = $(".projects");
+
+  $projects.isotope({
+    itemSelector: ".item",
+    layoutMode: "fitRows",
+  });
+
   $(".product-list-item").click(function () {
+    var filter = $(this).attr("data-filter");
+
     $(".selected").removeClass("selected");
     $(this).addClass("selected");
-  });
 
-  $(".all").click(function () {
-    $(".items-product").parent().css("display", "none");
-    $(".items-product").parents(".allItem").css("display", "block");
-  });
-
-  $(".brand").click(function (e) {
-    e.preventDefault();
-    $(".items-product").parent().css("display", "none");
-    $(".items-product").parents(".brandItem").css("display", "block");
-  });
-
-  $(".digital").click(function () {
-    $(".items-product").parent().css("display", "none");
-    $(".items-product").parents(".digitalItem").css("display", "block");
-  });
-
-  $(".package").click(function () {
-    $(".items-product").parent().css("display", "none");
-    $(".items-product").parents(".packageItem").css("display", "block");
+    $projects.isotope({ filter: filter });
   });
 
   //   Product section end
