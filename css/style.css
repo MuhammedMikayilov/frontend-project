@@ -45,8 +45,12 @@
 
 .navbar {
   background-color: transparent;
-  padding: 7px 0;
-  height: 50px; }
+  padding: 7px 0; }
+  .navbar .icons {
+    display: none; }
+  .navbar .navbar-toggler {
+    color: white;
+    display: none; }
   .navbar .nav-menu {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 17px 0 6px 45px;
@@ -89,9 +93,9 @@
   padding: 7px 0;
   transition: all 0.5s; }
   .bg-color-white a {
-    color: black !important; }
+    color: #232323 !important; }
   .bg-color-white .logo {
-    color: black; }
+    color: #232323; }
 
 .pop-up {
   width: 100%;
@@ -229,5 +233,33 @@
 .open-side {
   transform: translateX(0px);
   transition: all 1.5s; }
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    background-color: white !important; }
+    .navbar .navbar-toggler {
+      display: block !important; }
+      .navbar .navbar-toggler span {
+        color: #232323; }
+    .navbar .icon-navbar {
+      display: none; }
+    .navbar .nav-menu {
+      padding: 3px 5px; }
+      .navbar .nav-menu .logo {
+        color: #232323 !important; }
+    .navbar .nav-item a {
+      color: #232323 !important; }
+    .navbar .icons {
+      display: block !important; }
+      .navbar .icons .icon-navbar {
+        display: block;
+        padding: 0;
+        height: 0; }
+    .navbar .nav-list {
+      padding-left: 0; }
+      .navbar .nav-list ul li {
+        margin-top: 15px; }
+        .navbar .nav-list ul li a {
+          color: #232323 !important; } }
 
 /*# sourceMappingURL=style.css.map */

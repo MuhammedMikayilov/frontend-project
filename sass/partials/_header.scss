@@ -1,9 +1,16 @@
 .navbar {
   background-color: transparent;
   padding: 7px 0;
-  height: 50px;
-  //   background: none;
-  //   padding: 0 1rem;
+  // height: 50px;
+
+  .icons {
+    display: none;
+  }
+
+  .navbar-toggler {
+    color: $secondary-color;
+    display: none;
+  }
 
   .nav-menu {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -67,11 +74,11 @@
   transition: all 0.5s;
 
   a {
-    color: black !important;
+    color: $primary-responsive-color !important;
   }
 
   .logo {
-    color: black;
+    color: $primary-responsive-color;
   }
 }
 
@@ -162,7 +169,7 @@
     }
 
     .close-btn {
-      // color: black;
+      // color: $primary-responsive-color;
       display: inline-block;
       position: absolute;
       top: -10px;
@@ -262,4 +269,59 @@
 .open-side {
   transform: translateX(0px);
   transition: all 1.5s;
+}
+
+// Responsive
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    background-color: $secondary-color !important;
+
+    // color: $primary-responsive-color;
+    .navbar-toggler {
+      display: block !important;
+      span {
+        color: $primary-responsive-color;
+      }
+    }
+
+    .icon-navbar {
+      display: none;
+    }
+
+    .nav-menu {
+      padding: 3px 5px;
+      .logo {
+        color: $primary-responsive-color !important;
+      }
+    }
+
+    .nav-item {
+      a {
+        color: $primary-responsive-color !important;
+      }
+    }
+    .icons {
+      display: block !important;
+
+      .icon-navbar {
+        display: block;
+        padding: 0;
+        height: 0;
+      }
+    }
+
+    .nav-list {
+      padding-left: 0;
+      ul {
+        li {
+          margin-top: 15px;
+
+          a {
+            color: $primary-responsive-color !important;
+          }
+        }
+      }
+    }
+  }
 }
