@@ -15,7 +15,12 @@
 @import "partials/last";
 @import "partials/footer";
 
-// About page
+// About page start
 @import "partials/about/about-intro";
 @import "partials/about/about-card";
 @import "partials/about/about-parallax";
+// About page end
+
+// Contact page start
+@import "partials/contact/contact-intro";
+@import "partials/contact/contact-item";
