@@ -1,4 +1,4 @@
-#intro .btn-intro a {
+#intro .btn-intro a, #news .button-news a {
   padding: 15px 40px;
   border-radius: 30px; }
 
@@ -639,5 +639,17 @@
     #news .item-news:hover {
       box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
       transition: all 0.6s; }
+  #news .button-news {
+    text-align: center; }
+    #news .button-news a {
+      padding: 10px 70px;
+      margin-top: 9%;
+      border-radius: 30px;
+      border-color: rgba(35, 35, 35, 0.1);
+      color: #767676;
+      transition: all 0.4s; }
+      #news .button-news a:hover {
+        border-color: #232323;
+        transition: all 0.4s; }
 
 /*# sourceMappingURL=style.css.map */
