@@ -9,5 +9,32 @@
       font-size: 28px;
       //   letter-spacing: 0em;
     }
+
+    margin-bottom: 100px;
+  }
+
+  .expertise-item {
+    margin-top: 30px;
+    display: flex;
+    .left-item {
+      i {
+        font-size: 35px;
+        margin-right: 17px;
+        color: $btn-color;
+      }
+    }
+
+    .right-item {
+      h5 {
+        font-size: 14px !important;
+        margin-bottom: 22px;
+        color: $main-light-color;
+        font-weight: 300;
+      }
+      p {
+        color: $main-light-color;
+        font-size: 18px;
+      }
+    }
   }
 }
