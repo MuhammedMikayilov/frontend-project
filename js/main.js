@@ -125,4 +125,42 @@ $(document).ready(function () {
       1500
     );
   });
+  // Footer end
+
+  // Contact Start
+
+  function timeOut() {
+    setTimeout(function () {
+      $(".alert").hide(1000);
+    }, 2500);
+  }
+
+  $(".danger").hide();
+  $(".success").hide();
+
+  $(".subBtn").click(function (e) {
+    e.preventDefault();
+    console.log($("").val());
+    if ($("input[name=name]").val() == "") {
+      $(".danger").text("Please write your name");
+      $(".danger").show(900);
+      timeOut();
+    } else if ($("input[name=email]").val() == "") {
+      $(".danger").text("Please write your email");
+      $(".danger").show(900);
+      timeOut();
+    } else if ($("input[name=phone]").val() == "") {
+      $(".danger").text("Please write your phone number");
+      $(".danger").show(900);
+      timeOut();
+    } else if ($("textarea[name=message]").val() == "") {
+      $(".danger").text("Please write your message");
+      $(".danger").show(900);
+      timeOut();
+    } else {
+      $(".success").text("Thank you. We will get back to you soon");
+      $(".success").show(900);
+      timeOut();
+    }
+  });
 });

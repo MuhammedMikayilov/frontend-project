@@ -1066,12 +1066,12 @@ input:focus {
     font-style: italic; }
     #contact-input textarea:focus {
       outline: none !important; }
-  #contact-input .btn {
+  #contact-input .subBtn {
     background-color: #425cbb;
     border-color: #425cbb;
     transition: all 0.4s;
     padding: 15px; }
-    #contact-input .btn:hover {
+    #contact-input .subBtn:hover {
       background-color: #546cc3;
       border-color: #546cc3;
       transition: all 0.4s; }
