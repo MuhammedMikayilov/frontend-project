@@ -1,0 +1,43 @@
+#owl {
+  background-color: #afadad;
+  //   padding-top: 20;
+
+  .item {
+    .social-owl-box {
+      //   padding: 20px;
+
+      img {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #owl {
+    .social-owl-box {
+      //   padding: 0 !important;
+      text-align: center;
+
+      img {
+        width: 200px;
+        margin-left: 28%;
+        // position: relative;
+      }
+    }
+  }
+}
+// @media only screen and (max-width: 767px) {
+//   #owl {
+//     .social-owl-box {
+//       //   padding: 0 !important;
+//       text-align: center;
+
+//       img {
+//         width: 200px;
+//         margin-left: 28%;
+//         // position: relative;
+//       }
+//     }
+//   }
+// }

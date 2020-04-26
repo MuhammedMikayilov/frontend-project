@@ -87,4 +87,35 @@ $(document).ready(function () {
   });
 
   //   Product section end
+
+  // Owl section start
+
+  if ($(".social-owl .item").length) {
+    $("#social-owl-slider").owlCarousel({
+      // loop: true,
+      margin: 20,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsiveClass: true,
+      nav: false,
+      dots: false,
+      mouseDrag: false,
+      // freeDrag: false,
+      // pullDrag: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false,
+        },
+        600: {
+          items: 5,
+          nav: false,
+        },
+        1000: {
+          items: 5,
+        },
+      },
+    });
+  }
 });

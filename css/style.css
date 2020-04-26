@@ -631,7 +631,7 @@
         font-family: "Montserrat", "Helvetica", "Arial", sans-serif; }
         #news .item-news .card span em {
           color: #767676;
-          font-size: 0.7em;
+          font-size: .9em;
           letter-spacing: 0;
           font-style: italic;
           font-family: "Lora", "Helvetica", "Arial", sans-serif;
@@ -651,5 +651,17 @@
       #news .button-news a:hover {
         border-color: #232323;
         transition: all 0.4s; }
+
+#owl {
+  background-color: #afadad; }
+  #owl .item .social-owl-box img {
+    padding: 20px; }
+
+@media only screen and (max-width: 991px) {
+  #owl .social-owl-box {
+    text-align: center; }
+    #owl .social-owl-box img {
+      width: 200px;
+      margin-left: 28%; } }
 
 /*# sourceMappingURL=style.css.map */
