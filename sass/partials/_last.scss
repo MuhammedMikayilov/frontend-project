@@ -1,0 +1,45 @@
+#last {
+  padding: 80px 0;
+  background-color: $btn-color;
+
+  .title-last {
+    text-align: center;
+    h4 {
+      display: inline-block;
+      color: $secondary-color;
+      font-size: 1.4em;
+    }
+
+    a {
+      @extend %btn-shared;
+      border: 2px solid $border-color;
+      text-decoration: none;
+      color: $background-color;
+      margin-left: 2em;
+      transition: all 0.5s;
+      font-weight: 300;
+      padding: 12px 40px;
+
+      &:hover {
+        border: 2px solid rgba(255, 255, 255, 0.6);
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #last {
+    .title-last {
+      h4 {
+      }
+    }
+
+    .btn {
+      //   margin-top: 15px;
+      position: relative;
+      top: 15px;
+      right: 3%;
+    }
+  }
+}

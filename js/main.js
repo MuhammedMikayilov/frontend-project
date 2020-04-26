@@ -92,8 +92,8 @@ $(document).ready(function () {
 
   if ($(".social-owl .item").length) {
     $("#social-owl-slider").owlCarousel({
-      // loop: true,
-      margin: 20,
+      loop: true,
+      // margin: 20,
       autoplay: true,
       autoplayTimeout: 2000,
       autoplayHoverPause: true,
