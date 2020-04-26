@@ -7,6 +7,7 @@
   padding: 200px 0;
   background-size: cover;
   background-position: 50% 50% !important;
+  background-attachment: fixed;
   position: relative;
   transition: 0.3s linear;
   -webkit-transition: 0.3s linear;
@@ -27,6 +28,7 @@
     color: #f5f5f5;
     text-align: center;
     z-index: 2;
+    animation: fadeInUp 1s;
 
     h2 {
       font-weight: 600;
@@ -42,8 +44,42 @@
   }
 }
 
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
 @media only screen and (max-width: 991px) {
   #about-intro {
+    background-attachment: scroll;
     padding: 100px 0 !important;
     padding-top: 70px !important;
 
