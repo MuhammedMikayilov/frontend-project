@@ -71,12 +71,12 @@ $(document).ready(function () {
   });
 
   $(".product-list-item").click(function () {
-    var filter = $(this).attr("data-filter");
+    var filters = $(this).attr("data-filter");
 
     $(".selected").removeClass("selected");
     $(this).addClass("selected");
 
-    $projects.isotope({ filter: filter });
+    $projects.isotope({ filter: filters });
   });
 
   //   Product section end
