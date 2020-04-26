@@ -580,4 +580,16 @@
       font-weight: 400;
       color: #969494; }
 
+@media only screen and (max-width: 767px) {
+  #sentence::before {
+    background-color: #f8f8f8;
+    top: 0;
+    height: 100%; }
+  #sentence .order-image {
+    order: 1; }
+  #sentence .sentence-item {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 13%; } }
+
 /*# sourceMappingURL=style.css.map */
