@@ -1,0 +1,35 @@
+#about-card {
+  padding-bottom: 100px;
+  margin-top: -9%;
+
+  .about-card-item {
+    // margin-top: -36%;
+    margin-top: 30px;
+
+    .card {
+      border: 0;
+    }
+  }
+  .card-icon {
+    text-align: center;
+    padding: 81px;
+    background: #e6e2e2;
+    i {
+      font-size: 46px;
+      color: #888888;
+    }
+  }
+
+  .card-body {
+    padding: 2.34em;
+    h5 {
+      font-size: 17.5px;
+      font-family: $font-montser;
+      font-weight: 600;
+    }
+    p {
+      font-family: $font-lora;
+      color: $main-color;
+    }
+  }
+}

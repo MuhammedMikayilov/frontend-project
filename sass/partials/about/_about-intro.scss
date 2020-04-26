@@ -1,8 +1,15 @@
+.about-body {
+  background-color: $background-color;
+}
+
 #about-intro {
   background-image: url("../imgs/about-intro.jpg");
   padding: 200px 0;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 50% !important;
+  position: relative;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
 
   &::before {
     position: absolute;
@@ -34,3 +41,5 @@
     }
   }
 }
+
+// @media only screen and (max-width:)

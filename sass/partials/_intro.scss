@@ -9,6 +9,8 @@
   transition: 0.3s linear;
   -webkit-transition: 0.3s linear;
 
+  padding: 200px 0;
+
   &::before {
     position: absolute;
     content: "";
@@ -23,7 +25,7 @@
 
   .cent {
     position: relative;
-    top: 40%;
+    // top: 40%;
   }
 
   .logo {
