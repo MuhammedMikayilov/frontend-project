@@ -8,7 +8,7 @@
       display: inline-block;
       //   color: $main-color;
       color: $main-light-color;
-      font-family: "Lora", "Helvetica", "Arial", sans-serif;
+      font-family: $font-lora;
       cursor: pointer;
       font-style: italic;
       transition: all 0.5s;
@@ -64,13 +64,13 @@
           //   color: ;
           font-size: 16px;
           margin: 0;
-          font-family: "Lora", "Helvetica", "Arial", sans-serif;
+          font-family: $font-lora;
           font-weight: bold;
         }
         p {
           font-size: 14px;
           margin: 0;
-          font-family: "Lora", "Helvetica", "Arial", sans-serif;
+          font-family: $font-lora;
           color: $secondary-color;
         }
       }

@@ -1,3 +1,7 @@
+input:focus {
+  box-shadow: none !important;
+}
+
 $primary-color: #969494;
 $primary-color-bold: #686666;
 // $primary-color-light: #9e9e9ecb;
@@ -11,3 +15,6 @@ $main-light-color: #a5a0a0;
 $main--bold-color: #3f3939;
 $background-color: #f8f8f8;
 $border-color: rgba(255, 255, 255, 0.1);
+$font-lora: "Lora", "Helvetica", "Arial", sans-serif;
+$font-montser: "Montserrat", "Helvetica", "Arial", sans-serif;
+$footer-text: #cacaca;

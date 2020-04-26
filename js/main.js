@@ -20,13 +20,6 @@ $(document).ready(function () {
   var pop = $(".pop-up");
   var closeBtn = $(".icon-pop");
 
-  //   $(".popup").click(function () {
-  //     $("#email-popup").show("fast");
-  //   });
-  //   $(".phone").click(function () {
-  //     $("#phone-popup").show();
-  //   });
-
   $(".popup").click(function () {
     // $("#phone-popup").hide("fast");
   });

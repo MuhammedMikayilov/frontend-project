@@ -20,7 +20,7 @@
     // padding: 65px 0;
     margin-top: 33%;
     p {
-      font-family: "Lora", "Helvetica", "Arial", sans-serif;
+      font-family: $font-montser;
       font-size: 1.5em;
       color: $main-color;
       font-style: italic;
@@ -33,7 +33,7 @@
     }
 
     span {
-      font-family: "Lora", "Helvetica", "Arial", sans-serif;
+      font-family: $font-lora;
       font-size: 12px;
       font-weight: 400;
       color: $primary-color;

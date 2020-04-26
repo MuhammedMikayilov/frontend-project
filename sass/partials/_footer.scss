@@ -1,0 +1,119 @@
+#top-footer {
+  background-color: #232323;
+  padding: 70px 0;
+  //   position: relative;
+
+  .footer-top-item {
+    .logo {
+      width: 100px;
+    }
+
+    p {
+      color: $footer-text;
+      font-style: italic;
+      font-family: $font-lora;
+      margin: 25px 0;
+      font-weight: 500;
+      //   color: ;
+    }
+
+    .footer-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+      .footer-list-item {
+        margin-bottom: 0.4em;
+        a {
+          font-family: $font-montser;
+          color: #7d7d7d;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 0.72em;
+          letter-spacing: 1.1px;
+          font-weight: 500;
+          transition: all 0.6s;
+
+          &:hover {
+            color: $footer-text;
+            transition: all 0.6s;
+          }
+        }
+      }
+    }
+  }
+
+  h6 {
+    color: $footer-text;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+  }
+  .text {
+    color: $footer-text;
+    p {
+      font-family: $font-lora;
+      font-style: normal;
+      margin-top: 38px;
+
+      a {
+        text-decoration: underline;
+        color: $footer-text;
+        //   text-transform: unde;
+        transition: all 0.5s;
+
+        &:hover {
+          color: #a5a5a5;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+
+  .subs {
+    color: $footer-text;
+    margin-left: 15px;
+    p {
+      font-family: $font-lora;
+      font-style: normal;
+      margin: 40px 0 29px;
+    }
+  }
+
+  .input {
+    input {
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      padding: 30px;
+
+      &::placeholder {
+        font-style: italic;
+        font-family: $font-lora;
+      }
+    }
+    button {
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      background-color: $btn-color;
+      color: $secondary-color;
+      border-color: $btn-color;
+      text-transform: uppercase;
+      padding: 0 30px;
+    }
+
+    //
+    margin-bottom: 13%;
+  }
+
+  .icons {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        display: inline-block;
+        font-size: 1.08em;
+        letter-spacing: 1.5em;
+        margin-top: 32px;
+      }
+    }
+  }
+}

@@ -34,14 +34,14 @@
         p {
           font-size: 14px;
           margin: 0;
-          font-family: "Lora", "Helvetica", "Arial", sans-serif;
+          font-family: $font-lora;
           color: $main-color;
         }
 
         h4 {
           font-size: 16px;
           margin: 0;
-          font-family: "Lora", "Helvetica", "Arial", sans-serif;
+          font-family: $font-lora;
           font-weight: bold;
         }
       }
