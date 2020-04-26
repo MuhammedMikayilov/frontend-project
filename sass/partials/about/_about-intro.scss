@@ -42,4 +42,13 @@
   }
 }
 
-// @media only screen and (max-width:)
+@media only screen and (max-width: 991px) {
+  #about-intro {
+    padding: 100px 0 !important;
+    padding-top: 70px !important;
+
+    p {
+      margin: 5px !important;
+    }
+  }
+}
