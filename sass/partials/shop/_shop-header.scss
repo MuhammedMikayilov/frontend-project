@@ -30,6 +30,17 @@
   }
 }
 
+.navbar {
+  // border-bottom: 0;
+}
+
+.shop-card {
+  // height: 100%;
+  .nav-menu {
+    background-color: $background-color;
+  }
+}
+
 .animation-fadeIn {
   animation: fadeInDown 1s;
 }
