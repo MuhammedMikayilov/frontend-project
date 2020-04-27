@@ -66,19 +66,24 @@ $(document).ready(function () {
   // var $projects = $(".projects");
   var $product = $(".product");
 
-  $product.isotope({
-    itemSelector: ".item",
-    layoutMode: "fitRows",
-  });
+  
 
-  $(".product-list-item").click(function () {
-    var filters = $(this).attr("data-filter");
+  window.onload = function () {
 
-    $(".selected").removeClass("selected");
-    $(this).addClass("selected");
+    $product.isotope({
+      itemSelector: ".item",
+      layoutMode: "fitRows",
+    });
+};
 
-    $product.isotope({ filter: filters });
-  });
+    $(".product-list-item").click(function () {
+      var filters = $(this).attr("data-filter");
+
+      $(".selected").removeClass("selected");
+      $(this).addClass("selected");
+
+      $product.isotope({ filter: filters });
+    });
 
   //   Product section end
 

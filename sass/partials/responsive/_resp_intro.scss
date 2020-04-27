@@ -49,10 +49,26 @@
       top: 98%;
       left: 16%;
     }
+
+    ul.product-list {
+      padding: 0 !important;
+
+      li.product-list-item {
+        font-size: 14px !important;
+      }
+    }
   }
 
   .col-sm-12 {
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  ul.product-list {
+    li.product-list-item {
+      font-size: 14px !important;
+    }
   }
 }
 
@@ -63,7 +79,7 @@
       margin-bottom: 15px;
       padding: 5px;
       a {
-        padding: 0 10px;
+        padding: 5px 10px !important;
         font-size: 13px;
       }
     }

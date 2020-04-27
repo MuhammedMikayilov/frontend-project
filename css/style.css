@@ -404,16 +404,23 @@ body {
     #intro .icons {
       top: 98%;
       left: 16%; }
+    #intro ul.product-list {
+      padding: 0 !important; }
+      #intro ul.product-list li.product-list-item {
+        font-size: 14px !important; }
 
   .col-sm-12 {
     justify-content: center; } }
+@media only screen and (max-width: 767px) {
+  ul.product-list li.product-list-item {
+    font-size: 14px !important; } }
 @media only screen and (max-width: 575px) {
   #intro .btn-intro {
     margin-top: 11px;
     margin-bottom: 15px;
     padding: 5px; }
     #intro .btn-intro a {
-      padding: 0 10px;
+      padding: 5px 10px !important;
       font-size: 13px; }
   #intro .icons {
     top: 89%;
@@ -1244,7 +1251,6 @@ body {
     background-size: cover;
     background-position: 50% 50% !important;
     position: absolute;
-    height: 700px;
     width: 100%;
     top: 0;
     left: 0; }
