@@ -2,9 +2,15 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($("html, body").scrollTop() >= 120) {
       $(".navbar .nav-menu").addClass("bg-color-white");
+      $(".shop-card").addClass("fixed-top");
+      $(".shop-card").addClass("animation-fadeIn");
     } else {
       $(".navbar .nav-menu").removeClass("bg-color-white");
+      $(".shop-card").removeClass("fixed-top");
+      $(".shop-card").removeClass("animation-fadeIn");
     }
+
+    // fixed - top;
   });
 
   $("nav .icon-navbar .searchBtn").click(function (e) {
@@ -140,7 +146,6 @@ $(document).ready(function () {
 
   $(".subBtn").click(function (e) {
     e.preventDefault();
-    console.log($("").val());
     if ($("input[name=name]").val() == "") {
       $(".danger").text("Please write your name");
       $(".danger").show(900);
@@ -163,4 +168,6 @@ $(document).ready(function () {
       timeOut();
     }
   });
+
+  // Contact end
 });

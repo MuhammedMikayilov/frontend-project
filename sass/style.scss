@@ -1,5 +1,6 @@
 @import "partials/variable";
 @import "partials/mixins";
+@import "partials/animations";
 @import "partials/header";
 @import "partials/responsive/resp_header";
 @import "partials/intro";
@@ -25,3 +26,7 @@
 @import "partials/contact/contact-intro";
 @import "partials/contact/contact-item";
 @import "partials/contact/contact-input";
+// Contact page end
+
+// Shop page start
+@import "partials/shop/shop-header";

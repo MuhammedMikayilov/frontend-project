@@ -5,6 +5,50 @@ input:focus {
   padding: 15px 40px;
   border-radius: 30px; }
 
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
 .navbar {
   background-color: transparent;
   padding: 0; }
@@ -856,28 +900,6 @@ input:focus {
       font-weight: 600;
       line-height: 27px; }
 
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp; }
-
 @media only screen and (max-width: 991px) {
   #about-intro {
     background-attachment: scroll;
@@ -978,28 +1000,6 @@ input:focus {
       font-weight: 600;
       line-height: 27px; }
 
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp; }
-
 @media only screen and (max-width: 991px) {
   #contact-intro {
     background-attachment: scroll;
@@ -1057,6 +1057,9 @@ input:focus {
       border: 0 !important;
       font-family: "Lora", "Helvetica", "Arial", sans-serif;
       font-style: italic; }
+    #contact-input .contact-input .num::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
   #contact-input ::placeholder {
     color: #969494; }
   #contact-input input:focus {
@@ -1075,5 +1078,36 @@ input:focus {
       background-color: #546cc3;
       border-color: #546cc3;
       transition: all 0.4s; }
+
+#header-top {
+  background-color: #f4f4f4;
+  padding: 20px 0 20px 45px;
+  font-family: "Lora", "Helvetica", "Arial", sans-serif; }
+  #header-top span {
+    font-size: 0.6875em;
+    color: #767676; }
+  #header-top .header-top-list {
+    list-style-type: none;
+    margin: 0; }
+    #header-top .header-top-list .header-top-list-item {
+      margin-right: 30px;
+      cursor: pointer;
+      color: #767676;
+      transition: all 0.5s; }
+      #header-top .header-top-list .header-top-list-item i {
+        font-size: 0.989em; }
+      #header-top .header-top-list .header-top-list-item:hover {
+        color: #232323;
+        transition: all 0.5s; }
+
+.animation-fadeIn {
+  animation: fadeInDown 1s; }
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    padding: 5px 15px; } }
+@media only screen and (max-width: 767px) {
+  #header-top .header-top-list {
+    display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */
