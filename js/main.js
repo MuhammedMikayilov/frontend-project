@@ -149,7 +149,7 @@ $(document).ready(function () {
 
   function timeOut() {
     setTimeout(function () {
-      $(".alert").hide(1000);
+      $(".alert").hide(900);
     }, 2500);
   }
 
@@ -199,19 +199,34 @@ $(document).ready(function () {
     e.preventDefault();
     $(".selected-page").removeClass("selected-page");
     $(this).children().addClass("selected-page");
+    // $(this)
   });
   $(".page-list-item a.next").click(function (e) {
     e.preventDefault();
-    $(".selected-page").removeClass("selected-page");
-    $(".page-num").find(".last").addClass("selected-page");
-    $(".danger").show(1000);
-    timeOut();
+    if ($(".page-num").find(".first").is(".selected-page")) {
+      $(".selected-page").removeClass("selected-page");
+      $(".page-num").find(".second").addClass("selected-page");
+    } else if ($(".page-num").find(".second").is(".selected-page")) {
+      $(".selected-page").removeClass("selected-page");
+      $(".page-num").find(".last").addClass("selected-page");
+    } else {
+      $(".danger").show(900);
+      timeOut();
+    }
+
+    // $(".page-num").find(".last").addClass("selected-page");
   });
   $(".page-list-item a.prev").click(function (e) {
     e.preventDefault();
-    $(".selected-page").removeClass("selected-page");
-    $(".page-num").find(".first").addClass("selected-page");
-    $(".danger").show(1000);
-    timeOut();
+    if ($(".page-num").find(".last").is(".selected-page")) {
+      $(".selected-page").removeClass("selected-page");
+      $(".page-num").find(".second").addClass("selected-page");
+    } else if ($(".page-num").find(".second").is(".selected-page")) {
+      $(".selected-page").removeClass("selected-page");
+      $(".page-num").find(".first").addClass("selected-page");
+    } else {
+      $(".danger").show(900);
+      timeOut();
+    }
   });
 });
