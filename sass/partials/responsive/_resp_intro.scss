@@ -49,26 +49,10 @@
       top: 98%;
       left: 16%;
     }
-
-    ul.product-list {
-      padding: 0 !important;
-
-      li.product-list-item {
-        font-size: 14px !important;
-      }
-    }
   }
 
   .col-sm-12 {
     justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  ul.product-list {
-    li.product-list-item {
-      font-size: 14px !important;
-    }
   }
 }
 

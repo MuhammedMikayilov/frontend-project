@@ -404,16 +404,9 @@ body {
     #intro .icons {
       top: 98%;
       left: 16%; }
-    #intro ul.product-list {
-      padding: 0 !important; }
-      #intro ul.product-list li.product-list-item {
-        font-size: 14px !important; }
 
   .col-sm-12 {
     justify-content: center; } }
-@media only screen and (max-width: 767px) {
-  ul.product-list li.product-list-item {
-    font-size: 14px !important; } }
 @media only screen and (max-width: 575px) {
   #intro .btn-intro {
     margin-top: 11px;
