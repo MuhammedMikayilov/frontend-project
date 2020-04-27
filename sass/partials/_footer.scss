@@ -164,3 +164,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 771px) {
+  #bottom-footer {
+    .icon {
+      bottom: 55px;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #bottom-footer {
+    .icon {
+      bottom: 40px;
+    }
+  }
+}

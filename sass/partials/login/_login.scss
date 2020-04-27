@@ -1,0 +1,136 @@
+#login {
+  background-color: #ffffff;
+  padding-bottom: 70px;
+
+  //   margin: 0;
+  // height: 700px;
+  //   position: relative;
+  .image-login {
+    // background-image: url("../imgs/login.jpg");
+    // height: 100%;
+    // background-size: cover;
+    // background-position: 50% 50% !important;
+    // // z-index: 9999;
+    // position: absolute;
+    // height: 700px;
+    // width: 100%;
+    // top: 0;
+    // left: 0;
+    // opacity: 1;
+  }
+
+  .login-panel {
+    margin-bottom: 15px;
+  }
+
+  .label {
+    font-family: $font-montser;
+    font-size: 0.8em;
+    color: $primary-color;
+    /* padding-left: 21px; */
+    padding: 18px;
+    text-transform: uppercase;
+  }
+  .login-input {
+    .login-input-icon {
+      span {
+        border: 0 !important;
+        padding: 0 15px;
+        // margin-left: 15px;
+        background-color: $background-color;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+      i {
+        // color: $secondary-color;
+        margin-left: 10px;
+        font-size: 20px;
+      }
+    }
+    .form {
+      padding: 25px 0;
+      padding-left: 5px;
+      color: black;
+      border: 0 !important;
+      font-family: $font-lora;
+      font-style: italic;
+      background-color: $background-color;
+      //   opacity: 0.5;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+
+    .num::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.login-title {
+  //   display: ;
+  margin-top: 15%;
+  img {
+    width: 150px;
+  }
+  p {
+    font-family: $font-lora;
+    font-size: 1.4em;
+    line-height: 1.6em;
+    font-weight: 400;
+    color: $primary-color;
+    margin: 11px 0;
+  }
+}
+// }
+
+.check {
+  position: relative;
+  //   margin-top: -15px;
+//   margin: 30px 0;
+
+  .round {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    text-align: left;
+    .check-label {
+      margin-left: 20px;
+      display: inline-block;
+      color: $main-color;
+
+      span {
+        font-family: $font-lora;
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+
+.btn-input {
+  margin-top: 25%;
+  a {
+    width: 100%;
+    background-color: $btn-color;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+
+    &:hover {
+      background-color: $btn-hover-color;
+    }
+  }
+}
+
+.quest-line {
+  margin-top: 26px;
+  // display: inline-block;
+  font-size: 0.7em;
+  text-align: center;
+  font-family: $font-lora;
+  color: $main-color;
+  a {
+    color: $main-color;
+    text-decoration: underline;
+  }
+}

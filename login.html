@@ -29,7 +29,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Pillar - Shop Card</title>
+    <title>Pillar - Login</title>
   </head>
   <body>
     <header>
@@ -91,7 +91,7 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="login.html">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="shop.html">Shop</a>
@@ -229,376 +229,92 @@
     </header>
 
     <main>
-      <!-- Shop Card section start -->
-      <section id="shop-card">
-        <div class="container">
+      <!-- Login section start -->
+      <section id="login">
+        <div class="container-fluid pl-0">
           <div class="row">
-            <div class="col-sm-12">
-              <div class="title">
-                <h1>
-                  Shop Cards
-                </h1>
-                <p>
-                  Showcase shop items in a sylish grid arrangement.
-                </p>
+            <div class="col-lg-7 px-0 col-md-12">
+              <div class="image-login">
+                <img src="imgs/login.jpg" class="img-fluid" alt="" />
               </div>
             </div>
-          </div>
-          <div class="row"></div>
-        </div>
-      </section>
-      <!-- Shop Card section end -->
 
-      <!-- Shop Products section start -->
-      <section id="shop-products">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <div class="shop-product-title">
-                <ul class="shop-product-list">
-                  <li
-                    data-filter=".shop-all"
-                    class="shop-product-list-item shop-all selected"
-                  >
-                    Show All <em>/</em>
-                  </li>
-                  <li
-                    data-filter=".accessor"
-                    class="shop-product-list-item accessor"
-                  >
-                    Accessories<em>/</em>
-                  </li>
-                  <li
-                    data-filter=".apparel"
-                    class="shop-product-list-item apparel"
-                  >
-                    Apparel <em>/</em>
-                  </li>
-                  <li data-filter=".bags" class="shop-product-list-item bags">
-                    Bags
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="product">
-            <div class="row">
-              <div class="col-lg-4 col-md-6 item shop-all accessor">
-                <div class="shop-products-item">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="imgs/shop-products/product-large-1.jpg"
-                        class="card-img-top"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Accessories</h6>
-                        <h5 class="card-text">
-                          Charles Leather Bag
-                        </h5>
-                        <div class="price">
-                          <span class="old-price d-block">
-                            $129.99
-                          </span>
-                          <span class="new-price d-block">
-                            $89.99
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+            <div class="col-lg-5 col-md-12">
+              <div class="login-panel">
+                <div class="login-title text-center">
+                  <img src="imgs/logo-large-dark.png" alt="" />
+                  <p>
+                    A beautiful collection of <br />
+                    hand-crafted web components
+                  </p>
                 </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 item shop-all apparel">
-                <div class="shop-products-item">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="imgs/shop-products/product-large-3.jpg"
-                        class="card-img-top"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Apparel</h6>
-                        <h5 class="card-text">
-                          Dave Wool Beanie
-                        </h5>
-                        <div class="price">
-                          <span class="new-price d-block">
-                            $39.99
-                          </span>
-                        </div>
-                      </div>
+                <div class="col-sm-8 offset-sm-2 mt-5 text-center">
+                  <div class="label text-left">
+                    Username:
+                  </div>
+                  <div class="login-input input-group mb-3">
+                    <div class="login-input-icon input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">
+                        <i class="far fa-user-circle"></i>
+                      </span>
                     </div>
-                  </a>
+                    <input
+                      type="text"
+                      name="username"
+                      class="form form-control"
+                      placeholder="Username"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div class="col-lg-4 col-md-6 item shop-all bags">
-                <div class="shop-products-item">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="imgs/shop-products/product-large-4.jpg"
-                        class="card-img-top"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Bags</h6>
-                        <h5 class="card-text">
-                          Bonnie Denim Tote
-                        </h5>
-                        <div class="price">
-                          <span class="old-price d-block">
-                            $99.00
-                          </span>
-                          <span class="new-price d-block">
-                            $48.99
-                          </span>
-                        </div>
-                      </div>
+                <div class="col-sm-8 offset-sm-2 text-center">
+                  <div class="label text-left">
+                    Password:
+                  </div>
+                  <div class="login-input input-group mb-3">
+                    <div class="login-input-icon input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">
+                        <i class="far fa-user-circle"></i>
+                      </span>
                     </div>
-                  </a>
+                    <input
+                      type="password"
+                      name="pass"
+                      class="form form-control"
+                      placeholder="Password"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div class="col-lg-4 col-md-6 item shop-all accessor">
-                <div class="shop-products-item">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="imgs/shop-products/product-large-5.jpg"
-                        class="card-img-top"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Accessories</h6>
-                        <h5 class="card-text">
-                          Lucas Wrist Watch
-                        </h5>
-                        <div class="price">
-                          <span class="new-price d-block">
-                            $48.99
-                          </span>
+                <div class="col-sm-8 mb-5 offset-sm-2">
+                  <div class="checkbox-line">
+                    <div class="check">
+                      <div class="round">
+                        <input type="checkbox" id="checkbox" />
+                        <label for="checkbox"></label>
+                        <div class="check-label">
+                          <span class="text-left">Keep me logged in</span>
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 </div>
-              </div>
+                <div class="col-sm-8 mt-5 offset-sm-2">
+                  <div class="btn-input">
+                    <a href="#" class="btn btn-primary">LOGIN</a>
+                  </div>
 
-              <div class="col-lg-4 col-md-6 item shop-all apparel">
-                <div class="shop-products-item">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="imgs/shop-products/product-large-8.jpg"
-                        class="card-img-top"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Apparel</h6>
-                        <h5 class="card-text">
-                          Logan Slub Tee
-                        </h5>
-                        <div class="price">
-                          <span class="old-price d-block">
-                            $99.99
-                          </span>
-                          <span class="new-price d-block">
-                            $59.99
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 item shop-all apparel bags">
-                <div class="shop-products-item">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="imgs/shop-products/product-large-2.jpg"
-                        class="card-img-top"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Apparel</h6>
-                        <h5 class="card-text">
-                          Logan Slub Tee
-                        </h5>
-                        <div class="price">
-                          <span class="new-price d-block">
-                            $59.99
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 item shop-all accessor">
-                <div class="shop-products-item">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="imgs/shop-products/product-large-6.jpg"
-                        class="card-img-top"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Accessories</h6>
-                        <h5 class="card-text">
-                          Rose Tinted Glasses
-                        </h5>
-                        <div class="price">
-                          <span class="old-price d-block">
-                            $149.99
-                          </span>
-                          <span class="new-price d-block">
-                            $89.99
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 item shop-all apparel">
-                <div class="shop-products-item">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="imgs/shop-products/product-large-9.jpg"
-                        class="card-img-top"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Apparel</h6>
-                        <h5 class="card-text">
-                          Hunter Formal Shirt
-                        </h5>
-                        <div class="price">
-                          <span class="new-price d-block">
-                            $129.99
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 item shop-all accessor">
-                <div class="shop-products-item">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="imgs/shop-products/product-large-10.jpg"
-                        class="card-img-top"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Accessories</h6>
-                        <h5 class="card-text">
-                          Kenneth Leather Wshop-allet
-                        </h5>
-                        <div class="price">
-                          <span class="new-price d-block">
-                            $79.99
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 item shop-all apparel">
-                <div class="shop-products-item">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="imgs/shop-products/product-large-11.jpg"
-                        class="card-img-top"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Apparel</h6>
-                        <h5 class="card-text">
-                          Francis Felt Hat
-                        </h5>
-                        <div class="price">
-                          <span class="new-price d-block">
-                            $79.99
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 item shop-all accessor">
-                <div class="shop-products-item">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="imgs/shop-products/product-large-12.jpg"
-                        class="card-img-top"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Accessories</h6>
-                        <h5 class="card-text">
-                          Dennis Glasses
-                        </h5>
-                        <div class="price">
-                          <span class="new-price d-block">
-                            $149.99
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 item shop-all apparel">
-                <div class="shop-products-item">
-                  <a href="#">
-                    <div class="card">
-                      <img
-                        src="imgs/shop-products/product-large-7.jpg"
-                        class="card-img-top"
-                        alt=""
-                      />
-                      <div class="card-body">
-                        <h6 class="card-title">Apparel</h6>
-                        <h5 class="card-text">
-                          Bruce Leather Shoes
-                        </h5>
-                        <div class="price">
-                          <span class="new-price d-block">
-                            $189.99
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+                  <div class="quest-line">
+                    <span>Forgot password?</span>
+                    <a href="#"> Start password recovery </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Shop Products section end -->
+      <!-- Login section end -->
     </main>
 
     <footer>
