@@ -17,7 +17,7 @@ $(document).ready(function () {
     // fixed - top;
   });
 
-  $("nav .icon-navbar .searchBtn").click(function (e) {
+  $(".searchBtn").click(function (e) {
     e.preventDefault();
 
     $(".pop-up").fadeIn().removeClass("active");
@@ -30,16 +30,6 @@ $(document).ready(function () {
   var pop = $(".pop-up");
   var closeBtn = $(".icon-pop");
 
-  $(".popup").click(function () {
-    // $("#phone-popup").hide("fast");
-  });
-
-  pop.click(function (p) {
-    // if (p.target.hasClass("popup")) {
-    //   pop.css("display", "none");
-    // }
-    // $(".search").not()
-  });
   //   functions
   function closePop() {
     closeBtn.click(function () {
@@ -59,7 +49,7 @@ $(document).ready(function () {
 
   //   Sidebar
 
-  $("nav .icon-navbar .sidebarBtn").click(function (e) {
+  $(".sidebarBtn").click(function (e) {
     e.preventDefault();
     $(".sidebar").addClass("open-side");
   });
