@@ -139,6 +139,9 @@ $(document).ready(function () {
     ) {
       $(".danger").show(1000);
       timeOut();
+    } else {
+      $(".success").show(1000);
+      timeOut();
     }
   });
 
