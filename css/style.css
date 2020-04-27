@@ -45,6 +45,9 @@ body {
 .round input[type="checkbox"]:checked + label:after {
   opacity: 1; }
 
+.animation-fadeIn {
+  animation: fadeInDown 0.8s; }
+
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
@@ -1145,9 +1148,6 @@ body {
 .shop-card .nav-menu {
   background-color: #f8f8f8; }
 
-.animation-fadeIn {
-  animation: fadeInDown 1s; }
-
 @media only screen and (max-width: 991px) {
   .navbar {
     padding: 5px 15px; } }
@@ -1237,8 +1237,19 @@ body {
           transition: all 0.5s; }
 
 #login {
-  background-color: #ffffff;
-  padding-bottom: 70px; }
+  background-color: #ffffff; }
+  #login .image-login {
+    background-image: url("../imgs/login.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50% !important;
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    top: 0;
+    left: 0; }
+    #login .image-login img {
+      display: none; }
   #login .login-panel {
     margin-bottom: 15px; }
   #login .label {
@@ -1272,7 +1283,7 @@ body {
     margin: 0; }
 
 .login-title {
-  margin-top: 15%; }
+  margin-top: 8%; }
   .login-title img {
     width: 150px; }
   .login-title p {
@@ -1318,5 +1329,12 @@ body {
   .quest-line a {
     color: #767676;
     text-decoration: underline; }
+
+@media only screen and (max-width: 991px) {
+  .image-login {
+    position: relative !important;
+    background-image: none !important; }
+    .image-login .left-img {
+      display: block !important; } }
 
 /*# sourceMappingURL=style.css.map */

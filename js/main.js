@@ -2,10 +2,14 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($("html, body").scrollTop() >= 120) {
       $(".navbar .nav-menu").addClass("bg-color-white");
+      $(".navbar .nav-menu").addClass("animation-fadeIn");
+
       $(".shop-card").addClass("fixed-top");
       $(".shop-card").addClass("animation-fadeIn");
     } else {
       $(".navbar .nav-menu").removeClass("bg-color-white");
+      $(".navbar .nav-menu").removeClass("animation-fadeIn");
+
       $(".shop-card").removeClass("fixed-top");
       $(".shop-card").removeClass("animation-fadeIn");
     }
@@ -69,9 +73,10 @@ $(document).ready(function () {
 
   // Product section start
 
-  var $projects = $(".projects");
+  // var $projects = $(".projects");
+  var $product = $(".product");
 
-  $projects.isotope({
+  $product.isotope({
     itemSelector: ".item",
     layoutMode: "fitRows",
   });
@@ -82,7 +87,7 @@ $(document).ready(function () {
     $(".selected").removeClass("selected");
     $(this).addClass("selected");
 
-    $projects.isotope({ filter: filters });
+    $product.isotope({ filter: filters });
   });
 
   //   Product section end
@@ -172,13 +177,6 @@ $(document).ready(function () {
   // Contact end
 
   // Shop Products start
-
-  var $product = $(".product");
-
-  $product.isotope({
-    itemSelector: ".item",
-    layoutMode: "fitRows",
-  });
 
   $(".shop-product-list-item").click(function () {
     var filterShop = $(this).attr("data-filter");

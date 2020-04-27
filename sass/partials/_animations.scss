@@ -1,3 +1,7 @@
+.animation-fadeIn {
+  animation: fadeInDown 0.8s;
+}
+
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
