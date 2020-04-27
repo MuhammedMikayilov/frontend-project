@@ -1,0 +1,12 @@
+#shop-card {
+  padding: 120px 0;
+  .title {
+    @include title($main-color, $title-head-color);
+    text-align: center;
+    h1 {
+      font-size: 4em;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+  }
+}

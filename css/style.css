@@ -5,6 +5,9 @@ input:focus {
   padding: 15px 40px;
   border-radius: 30px; }
 
+body {
+  background-color: #f8f8f8; }
+
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
@@ -864,9 +867,6 @@ input:focus {
       transform: translateY(-10px);
       transition: all 0.5s; }
 
-.about-body {
-  background-color: #f8f8f8; }
-
 #about-intro {
   background-image: url("../imgs/about-intro.jpg");
   padding: 200px 0;
@@ -1109,5 +1109,21 @@ input:focus {
 @media only screen and (max-width: 767px) {
   #header-top .header-top-list {
     display: none !important; } }
+#shop-card {
+  padding: 120px 0; }
+  #shop-card .title {
+    text-align: center; }
+    #shop-card .title h4 {
+      color: #343434;
+      font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+      font-weight: 600; }
+    #shop-card .title p {
+      color: #767676;
+      font-family: "Lora", "Helvetica", "Arial", sans-serif;
+      font-size: 1.4375em; }
+    #shop-card .title h1 {
+      font-size: 4em;
+      font-weight: 700;
+      margin-bottom: 25px; }
 
 /*# sourceMappingURL=style.css.map */

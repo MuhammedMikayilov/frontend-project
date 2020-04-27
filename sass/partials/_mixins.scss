@@ -6,13 +6,13 @@
 @mixin title($p-color, $h-color) {
   h4 {
     color: $h-color;
-    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    font-family: $font-montser;
     font-weight: 600;
     // text-align: center;
   }
   p {
     color: $p-color;
-    font-family: "Lora", "Helvetica", "Arial", sans-serif;
+    font-family: $font-lora;
     font-size: 1.4375em;
 
     // text-align: center;
@@ -40,4 +40,8 @@
       }
     }
   }
+}
+
+body {
+  background-color: $background-color;
 }
