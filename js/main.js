@@ -170,4 +170,22 @@ $(document).ready(function () {
   });
 
   // Contact end
+
+  // Shop Products start
+
+  var $product = $(".product");
+
+  $product.isotope({
+    itemSelector: ".item",
+    layoutMode: "fitRows",
+  });
+
+  $(".shop-product-list-item").click(function () {
+    var filterShop = $(this).attr("data-filter");
+
+    $(".selected").removeClass("selected");
+    $(this).addClass("selected");
+
+    $product.isotope({ filter: filterShop });
+  });
 });
