@@ -90,3 +90,8 @@ body {
 .round input[type="checkbox"]:checked + label:after {
   opacity: 1;
 }
+
+.success,
+.danger {
+  display: none;
+}

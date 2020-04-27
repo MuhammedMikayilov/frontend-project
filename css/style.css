@@ -45,6 +45,10 @@ body {
 .round input[type="checkbox"]:checked + label:after {
   opacity: 1; }
 
+.success,
+.danger {
+  display: none; }
+
 .animation-fadeIn {
   animation: fadeInDown 0.8s; }
 
@@ -1234,6 +1238,30 @@ body {
               font-weight: 600; }
         #shop-products .shop-products-item a .card:hover {
           box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.06);
+          transition: all 0.5s; }
+  #shop-products .page-list {
+    list-style-type: none; }
+    #shop-products .page-list span {
+      display: block;
+      margin-right: 15px;
+      width: 30px;
+      height: 30px;
+      line-height: 27px;
+      background-color: transparent;
+      border-radius: 50%;
+      transition: all 0.5s; }
+    #shop-products .page-list .selected-page {
+      background-color: #cacaca; }
+    #shop-products .page-list .page-list-item {
+      display: inline-block; }
+      #shop-products .page-list .page-list-item a {
+        text-decoration: none;
+        color: #969494; }
+        #shop-products .page-list .page-list-item a:hover span {
+          background-color: #cacaca;
+          transition: all 0.5s; }
+        #shop-products .page-list .page-list-item a:hover .change-btn {
+          background-color: #e6e6e6;
           transition: all 0.5s; }
 
 #login {

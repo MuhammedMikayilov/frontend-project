@@ -66,24 +66,21 @@ $(document).ready(function () {
   // var $projects = $(".projects");
   var $product = $(".product");
 
-  
-
   window.onload = function () {
-
     $product.isotope({
       itemSelector: ".item",
       layoutMode: "fitRows",
     });
-};
+  };
 
-    $(".product-list-item").click(function () {
-      var filters = $(this).attr("data-filter");
+  $(".product-list-item").click(function () {
+    var filters = $(this).attr("data-filter");
 
-      $(".selected").removeClass("selected");
-      $(this).addClass("selected");
+    $(".selected").removeClass("selected");
+    $(this).addClass("selected");
 
-      $product.isotope({ filter: filters });
-    });
+    $product.isotope({ filter: filters });
+  });
 
   //   Product section end
 
@@ -141,30 +138,30 @@ $(document).ready(function () {
     }, 2500);
   }
 
-  $(".danger").hide();
-  $(".success").hide();
+  // $(".danger").hide();
+  // $(".success").hide();
 
   $(".subBtn").click(function (e) {
     e.preventDefault();
     if ($("input[name=name]").val() == "") {
       $(".danger").text("Please write your name");
-      $(".danger").show(900);
+      $(".danger").show(1000);
       timeOut();
     } else if ($("input[name=email]").val() == "") {
       $(".danger").text("Please write your email");
-      $(".danger").show(900);
+      $(".danger").show(1000);
       timeOut();
     } else if ($("input[name=phone]").val() == "") {
       $(".danger").text("Please write your phone number");
-      $(".danger").show(900);
+      $(".danger").show(1000);
       timeOut();
     } else if ($("textarea[name=message]").val() == "") {
       $(".danger").text("Please write your message");
-      $(".danger").show(900);
+      $(".danger").show(1000);
       timeOut();
     } else {
       $(".success").text("Thank you. We will get back to you soon");
-      $(".success").show(900);
+      $(".success").show(1000);
       timeOut();
     }
   });
@@ -180,5 +177,26 @@ $(document).ready(function () {
     $(this).addClass("selected");
 
     $product.isotope({ filter: filterShop });
+  });
+
+  // $
+  $(".page-list-item a.page-num").click(function (e) {
+    e.preventDefault();
+    $(".selected-page").removeClass("selected-page");
+    $(this).children().addClass("selected-page");
+  });
+  $(".page-list-item a.next").click(function (e) {
+    e.preventDefault();
+    $(".selected-page").removeClass("selected-page");
+    $(".page-num").find(".last").addClass("selected-page");
+    $(".danger").show(1000);
+    timeOut();
+  });
+  $(".page-list-item a.prev").click(function (e) {
+    e.preventDefault();
+    $(".selected-page").removeClass("selected-page");
+    $(".page-num").find(".first").addClass("selected-page");
+    $(".danger").show(1000);
+    timeOut();
   });
 });

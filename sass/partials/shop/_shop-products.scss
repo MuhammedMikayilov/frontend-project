@@ -90,4 +90,41 @@
       }
     }
   }
+
+  .page-list {
+    list-style-type: none;
+
+    span {
+      display: block;
+      margin-right: 15px;
+      width: 30px;
+      height: 30px;
+      line-height: 27px;
+      background-color: transparent;
+      border-radius: 50%;
+      transition: all 0.5s;
+    }
+
+    .selected-page {
+      background-color: $footer-text;
+    }
+
+    .page-list-item {
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+
+        &:hover span {
+          background-color: $footer-text;
+          transition: all 0.5s;
+        }
+        &:hover .change-btn {
+          background-color: $span-hover;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
 }
