@@ -130,6 +130,18 @@ $(document).ready(function () {
   });
   // Footer end
 
+  // Login start
+  $(".loginBtn").click(function (e) {
+    e.preventDefault();
+    if (
+      $("input[name=username]").val() == "" ||
+      $("input[name=pass]").val() == ""
+    ) {
+      $(".danger").show(1000);
+      timeOut();
+    }
+  });
+
   // Contact Start
 
   function timeOut() {
