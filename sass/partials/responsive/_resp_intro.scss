@@ -46,8 +46,14 @@
     }
 
     .icons {
-      top: 98%;
-      left: 16%;
+      // top: 98%;
+      // left: 16%;
+
+      position: static;
+      text-align: center;
+      ul {
+        padding: 0 !important;
+      }
     }
   }
 
@@ -69,8 +75,11 @@
     }
 
     .icons {
-      top: 89%;
-      left: 28%;
+      // top: 89%;
+      // left: 30%;
+      // position: static;
+      // text-align: center;
+      // padding: 0 !important;
       letter-spacing: 0.5em;
       font-size: 25px;
 
@@ -82,10 +91,18 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
-  #intro {
-    .icons {
-      left: 20%;
-    }
-  }
-}
+// @media only screen and (max-width: 495px) {
+//   #intro {
+//     .icons {
+//       left: 24%;
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 427px) {
+//   #intro {
+//     .icons {
+//       left: 20%;
+//     }
+//   }
+// }

@@ -65,6 +65,7 @@
 
   .icons {
     @include icons;
+    text-align: center;
   }
 }
 

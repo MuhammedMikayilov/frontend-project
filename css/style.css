@@ -364,7 +364,8 @@ body {
     position: absolute;
     top: 146%;
     left: 38%;
-    color: rgba(202, 202, 202, 0.685); }
+    color: rgba(202, 202, 202, 0.685);
+    text-align: center; }
     #intro .icons .icon-list {
       list-style-type: none; }
       #intro .icons .icon-list .icon-list-item {
@@ -405,8 +406,10 @@ body {
       margin-top: 15px;
       margin-bottom: 30px; }
     #intro .icons {
-      top: 98%;
-      left: 16%; }
+      position: static;
+      text-align: center; }
+      #intro .icons ul {
+        padding: 0 !important; }
 
   .col-sm-12 {
     justify-content: center; } }
@@ -419,16 +422,11 @@ body {
       padding: 5px 10px !important;
       font-size: 13px; }
   #intro .icons {
-    top: 89%;
-    left: 28%;
     letter-spacing: 0.5em;
     font-size: 25px; }
     #intro .icons li {
       font-size: 13px !important;
       margin-right: 0 !important; } }
-@media only screen and (max-width: 400px) {
-  #intro .icons {
-    left: 20%; } }
 #digital {
   padding: 100px 0;
   background-color: #f8f8f8; }
