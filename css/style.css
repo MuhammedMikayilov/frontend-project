@@ -1161,7 +1161,8 @@ body {
 #shop-card {
   padding: 120px 0; }
   #shop-card .title {
-    text-align: center; }
+    text-align: center;
+    animation: fadeInUp 1s; }
     #shop-card .title h4 {
       color: #343434;
       font-family: "Montserrat", "Helvetica", "Arial", sans-serif;

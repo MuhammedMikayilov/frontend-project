@@ -3,6 +3,7 @@
   .title {
     @include title($main-color, $title-head-color);
     text-align: center;
+    animation: fadeInUp 1s;
     h1 {
       font-size: 4em;
       font-weight: 700;

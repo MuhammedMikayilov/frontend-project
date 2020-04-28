@@ -6,6 +6,8 @@ $(document).ready(function () {
 
       $(".shop-card").addClass("fixed-top");
       $(".shop-card").addClass("animation-fadeIn");
+
+      $("")
     } else {
       $(".navbar .nav-menu").removeClass("bg-color-white");
       $(".navbar .nav-menu").removeClass("animation-fadeIn");
@@ -194,7 +196,6 @@ $(document).ready(function () {
     $product.isotope({ filter: filterShop });
   });
 
-  // $
   $(".page-list-item a.page-num").click(function (e) {
     e.preventDefault();
     $(".selected-page").removeClass("selected-page");
