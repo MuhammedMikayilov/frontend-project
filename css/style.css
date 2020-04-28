@@ -710,6 +710,10 @@ body {
     margin-top: 50px;
     cursor: pointer;
     transition: all 0.6s; }
+    #news .item-news a {
+      text-decoration: none; }
+      #news .item-news a p {
+        color: #212521; }
     #news .item-news .card {
       border: 0; }
       #news .item-news .card h6 {
