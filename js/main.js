@@ -25,7 +25,7 @@ $(document).ready(function () {
     $(".pop-up").fadeIn().removeClass("active");
     closePop();
     setCloseKey();
-    closePopUp();
+    // closePopUp();
   });
 
   //   popup

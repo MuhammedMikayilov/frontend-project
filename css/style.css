@@ -330,7 +330,8 @@ body {
   z-index: 0;
   transition: 0.3s linear;
   -webkit-transition: 0.3s linear;
-  padding: 200px 0; }
+  padding: 200px 0;
+  padding-bottom: 48px; }
   #intro::before {
     position: absolute;
     content: "";
@@ -361,9 +362,9 @@ body {
       #intro .btn-intro a i {
         color: white; }
   #intro .icons {
-    position: absolute;
-    top: 146%;
-    left: 38%;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 0;
     color: rgba(202, 202, 202, 0.685);
     text-align: center; }
     #intro .icons .icon-list {
