@@ -8,7 +8,7 @@
     }
 
     .icons {
-      top: 211%;
+      top: 136%;
       left: 24%;
       letter-spacing: 1em;
     }
@@ -70,13 +70,22 @@
 
     .icons {
       top: 89%;
-      left: 24%;
+      left: 28%;
       letter-spacing: 0.5em;
+      font-size: 25px;
 
       li {
         font-size: 13px !important;
         margin-right: 0 !important;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #intro {
+    .icons {
+      left: 20%;
     }
   }
 }

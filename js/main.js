@@ -7,7 +7,7 @@ $(document).ready(function () {
       $(".shop-card").addClass("fixed-top");
       $(".shop-card").addClass("animation-fadeIn");
 
-      $("")
+      $("");
     } else {
       $(".navbar .nav-menu").removeClass("bg-color-white");
       $(".navbar .nav-menu").removeClass("animation-fadeIn");
