@@ -88,6 +88,23 @@
   // @include icons;
 }
 
+@media only screen and (max-width: 991px) {
+  #creative {
+    // order: ;
+
+    .icons {
+      ul {
+        left: 0% !important;
+
+        li {
+          font-size: 16px !important;
+          letter-spacing: 0.8em !important;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   #creative {
     // order: ;
@@ -96,14 +113,11 @@
       .icons {
         left: 2% !important;
         ul {
-          list-style-type: none;
-          position: absolute;
-          bottom: 4%;
-          left: 4%;
+          left: 12% !important;
           margin-left: -17px;
           li {
-            font-size: 13px !important;
-            letter-spacing: 10px !important;
+            // font-size: 13px !important;
+            // letter-spacing: 10px !important;
             margin-right: 0 !important;
           }
         }
