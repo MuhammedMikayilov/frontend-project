@@ -294,7 +294,8 @@ body {
     background-color: #fff !important;
     position: relative; }
     .navbar .navbar-toggler {
-      display: block !important; }
+      display: block !important;
+      color: black !important; }
     .navbar .icon-navbar {
       display: none; }
     .navbar .nav-menu {
@@ -440,6 +441,10 @@ body {
       font-family: "Lora", "Helvetica", "Arial", sans-serif;
       font-size: 1.4375em; }
 
+@media only screen and (max-width: 991px) {
+  #products .product-list {
+    font-size: 13px;
+    padding: 0; } }
 #products {
   background-color: #f8f8f8;
   padding: 0;
@@ -1299,7 +1304,8 @@ body {
     position: absolute;
     width: 100%;
     top: 0;
-    left: 0; }
+    left: 0;
+    opacity: 1; }
     #login .image-login img {
       display: none; }
   #login .login-panel {
@@ -1382,7 +1388,7 @@ body {
     color: #767676;
     text-decoration: underline; }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   .image-login {
     position: relative !important;
     background-image: none !important; }

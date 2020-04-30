@@ -17,7 +17,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    // opacity: 1;
+    opacity: 1;
 
     img {
       // visibility: hidden;
@@ -143,7 +143,7 @@
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   .image-login {
     position: relative !important;
     background-image: none !important;
