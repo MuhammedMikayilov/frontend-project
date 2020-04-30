@@ -295,7 +295,8 @@ body {
     position: relative; }
     .navbar .navbar-toggler {
       display: block !important;
-      color: black !important; }
+      color: black !important;
+      outline: 0 !important; }
     .navbar .icon-navbar {
       display: none; }
     .navbar .nav-menu {
