@@ -174,9 +174,38 @@
 }
 
 @media only screen and (max-width: 575px) {
+  #top-footer {
+    .input-group-append {
+      width: 100% !important;
+      margin-top: 18px !important;
+
+      button {
+        border-radius: 30px !important;
+        width: 100% !important;
+        padding: 6px !important;
+      }
+    }
+
+    .form-control {
+      border-radius: 30px !important;
+      padding: 23px !important;
+    }
+  }
+
   #bottom-footer {
+    text-align: center !important;
+    padding: 17px 0 !important;
     .icon {
-      bottom: 40px;
+      // bottom: 55px;
+
+      position: static !important;
+      margin-top: 25px !important;
+      a {
+        font-size: 18px !important;
+        width: 40px !important;
+        height: 40px !important;
+        line-height: 40px !important;
+      }
     }
   }
 }
