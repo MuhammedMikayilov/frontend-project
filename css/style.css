@@ -296,7 +296,8 @@ body {
     .navbar .navbar-toggler {
       display: block !important;
       color: black !important;
-      outline: 0 !important; }
+      outline: 0 !important;
+      padding: 0 !important; }
     .navbar .icon-navbar {
       display: none; }
     .navbar .nav-menu {
@@ -1192,6 +1193,10 @@ body {
 @media only screen and (max-width: 767px) {
   #header-top .header-top-list {
     display: none !important; } }
+@media only screen and (max-width: 560px) {
+  #header-top span.h6 {
+    display: inline-block !important;
+    width: 100%; } }
 #shop-card {
   padding: 120px 0; }
   #shop-card .title {
@@ -1299,6 +1304,10 @@ body {
           background-color: #e6e6e6;
           transition: all 0.5s; }
 
+@media only screen and (max-width: 991px) {
+  #shop-products .shop-product-list {
+    padding: 0 !important;
+    font-size: 13px !important; } }
 #login {
   background-color: #ffffff; }
   #login .image-login {

@@ -128,3 +128,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 991px) {
+  #shop-products {
+    .shop-product-list {
+      padding: 0 !important;
+
+      font-size: 13px !important;
+    }
+  }
+}
