@@ -107,7 +107,16 @@ body {
   .navbar .nav-menu {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 7px 0 6px 45px;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    position: relative; }
+    .navbar .nav-menu::after {
+      content: "";
+      width: 1px;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      top: 0;
+      right: 10%; }
   .navbar .nav-list {
     padding: 0 15px;
     font-size: 10px;
@@ -128,7 +137,6 @@ body {
     font-weight: 500;
     font-size: 25px; }
   .navbar .icon-navbar {
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
     padding: 7px 20px;
     height: 50px; }
     .navbar .icon-navbar a {
@@ -148,6 +156,8 @@ body {
     color: #232323 !important; }
   .bg-color-white .logo {
     color: #232323; }
+  .bg-color-white::after {
+    background-color: #cacaca !important; }
 
 .pop-up {
   width: 100%;
@@ -379,6 +389,9 @@ body {
         #intro .icons .icon-list .icon-list-item:hover {
           color: #fff;
           transition: all 0.2s; }
+    #intro .icons .icon-list .icon-list-item {
+      letter-spacing: 3em;
+      font-size: 22px; }
 
 @media only screen and (max-width: 991px) {
   #intro {

@@ -16,6 +16,19 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 7px 0 6px 45px;
     transition: all 0.5s;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 100%;
+
+      background-color: rgba(255, 255, 255, 0.1);
+
+      position: absolute;
+      top: 0;
+      right: 10%;
+    }
   }
 
   .nav-list {
@@ -49,7 +62,7 @@
   }
 
   .icon-navbar {
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    // border-left: 1px solid rgba(255, 255, 255, 0.1);
     padding: 7px 20px;
     height: 50px;
 
@@ -78,6 +91,11 @@
 
   .logo {
     color: $primary-responsive-color;
+  }
+
+  &::after {
+    background-color: $footer-text !important;
+    // bac
   }
 }
 
