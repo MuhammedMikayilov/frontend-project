@@ -395,7 +395,9 @@ body {
 
 @media only screen and (max-width: 991px) {
   #intro {
-    background-attachment: scroll; } }
+    background-attachment: scroll; }
+    #intro .icons .icon-list .icon-list-item {
+      letter-spacing: 0em !important; } }
 @media only screen and (max-width: 991px) {
   #intro .btn-intro a {
     padding: 9px 15px; }
