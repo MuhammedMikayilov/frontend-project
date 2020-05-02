@@ -4,7 +4,7 @@
   font-family: $font-lora;
 
   span {
-    font-size: 0.6875em;
+    font-size: 0.6em;
     color: $main-color;
   }
 
@@ -30,8 +30,6 @@
   }
 }
 
-
-
 .shop-card {
   // height: 100%;
   .nav-menu {
@@ -40,8 +38,8 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .navbar {
-    padding: 5px 15px;
+  .nav-menu {
+    padding: 5px 15px !important;
   }
 }
 
@@ -54,14 +52,14 @@
     }
   }
 }
-@media only screen and (max-width: 560px) {
-  #header-top {
-    // padding: 10px 0 !important;
+// @media only screen and (max-width: 560px) {
+//   #header-top {
+//     // padding: 10px 0 !important;
 
-    span.h6 {
-      // font-size: 10px !important;
-      display: inline-block !important;
-      width: 100%;
-    }
-  }
-}
+//     span.h6 {
+//       // font-size: 10px !important;
+//       display: inline-block !important;
+//       width: 100%;
+//     }
+//   }
+// }

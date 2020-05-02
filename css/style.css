@@ -1181,7 +1181,7 @@ body {
   padding: 20px 0 20px 45px;
   font-family: "Lora", "Helvetica", "Arial", sans-serif; }
   #header-top span {
-    font-size: 0.6875em;
+    font-size: 0.6em;
     color: #767676; }
   #header-top .header-top-list {
     list-style-type: none;
@@ -1201,15 +1201,11 @@ body {
   background-color: #f8f8f8; }
 
 @media only screen and (max-width: 991px) {
-  .navbar {
-    padding: 5px 15px; } }
+  .nav-menu {
+    padding: 5px 15px !important; } }
 @media only screen and (max-width: 767px) {
   #header-top .header-top-list {
     display: none !important; } }
-@media only screen and (max-width: 560px) {
-  #header-top span.h6 {
-    display: inline-block !important;
-    width: 100%; } }
 #shop-card {
   padding: 120px 0; }
   #shop-card .title {
